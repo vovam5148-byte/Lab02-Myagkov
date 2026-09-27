@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Границы целочисленных типов");
+﻿using System.Globalization;
+
+Console.WriteLine("Границы целочисленных типов");
 Console.WriteLine($"byte:   {byte.MinValue} .. {byte.MaxValue}");
 Console.WriteLine($"short:  {short.MinValue} .. {short.MaxValue}");
 Console.WriteLine($"int:    {int.MinValue} .. {int.MaxValue}");
@@ -111,5 +113,16 @@ Console.WriteLine($"Возраст в 2030 году: {age2030}");
 Console.WriteLine($"Средний балл за прошлый семестр: {GPA}");
 Console.WriteLine($"Любимая буква алфавита: {favoriteLetter}");
 Console.WriteLine("================================");
+
+//Задание 1. Калькулятор ИМТ ★
+
+Console.WriteLine();
+Console.WriteLine("Какой у вас рост (в м): ");
+double rost = Convert.ToDouble(Console.ReadLine(), CultureInfo.InvariantCulture); 
+Console.WriteLine("Какой у вас вес (в кг): ");
+double ves = Convert.ToDouble(Console.ReadLine(), CultureInfo.InvariantCulture); 
+
+double bmi = ves / (rost * rost);      // Формула для расчета
+Console.WriteLine($"ИМТ: {bmi:F2}");   // Выводим результат
 
 
