@@ -16,3 +16,23 @@ Console.WriteLine("Переполнение byte");
 byte maxByte = 255;
 byte overflowed = (byte)(maxByte + 1);
 Console.WriteLine($"255 + 1 byte = {overflowed}");
+
+Console.WriteLine();
+Console.WriteLine("char");
+
+char firstLetter = 'A';
+char separator = '-';
+int charAsNumber = firstLetter; // char можно неявно преобразовать в int - это код символа в таблице Unicode
+Console.WriteLine($"Символ: {firstLetter}, разделитель: {separator}");
+Console.WriteLine($"Код символа {firstLetter} в Unicode: {charAsNumber}");
+Console.WriteLine($"Табуляция: \tпосле таба");
+Console.WriteLine($"Перенос: \nпосле переноса");
+
+Console.WriteLine();
+Console.WriteLine("decimal против double");
+
+double priceDouble = 0.1 + 0.2;
+decimal priceDecimal = 0.1m + 0.2m;
+
+Console.WriteLine($"double: 0.1 + 0.2 = {priceDouble}");
+Console.WriteLine($"decimal: 0.1m + 0.2m = {priceDecimal}");

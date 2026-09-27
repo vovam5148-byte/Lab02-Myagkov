@@ -12,3 +12,4 @@ C:\Users\EG\Documents\Lab02-Myagkov\obj\Debug\net10.0\refint\Lab02-Myagkov.dll
 C:\Users\EG\Documents\Lab02-Myagkov\obj\Debug\net10.0\Lab02-Myagkov.pdb
 C:\Users\EG\Documents\Lab02-Myagkov\obj\Debug\net10.0\Lab02-Myagkov.genruntimeconfig.cache
 C:\Users\EG\Documents\Lab02-Myagkov\obj\Debug\net10.0\ref\Lab02-Myagkov.dll
+C:\Users\EG\Documents\Lab02-Myagkov\obj\Debug\net10.0\Lab02-Myagkov.sourcelink.json
