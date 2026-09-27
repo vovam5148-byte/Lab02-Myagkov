@@ -135,3 +135,22 @@ string firstName = Console.ReadLine();
 char initial = firstName[0]; 
 Console.WriteLine($"{surname} {initial}.");
 
+//Задание 3. TryParse на трёх типах ★★★
+Console.WriteLine();
+Console.WriteLine("Введите целое число:");
+string ChisloInput = Console.ReadLine();
+bool Chislo = int.TryParse(ChisloInput, out int ChisloOut);
+
+Console.WriteLine();
+Console.WriteLine("Введите дробное число: ");
+string doubleInput = Console.ReadLine();
+bool Drob = double.TryParse(doubleInput, out double DrobOut);
+
+Console.WriteLine("Введите дату (дд.мм.гггг): ");
+string dateInput = Console.ReadLine();
+bool Date = DateTime.TryParse(dateInput, out DateTime DateOut);
+
+Console.WriteLine($"Целое число — успех: {Chislo}, значение: {ChisloOut}");
+Console.WriteLine($"Дробное число — успех: {Drob}, значение: {DrobOut}");
+Console.WriteLine($"Дата — успех: {Date}, значение: {DateOut}");
+
