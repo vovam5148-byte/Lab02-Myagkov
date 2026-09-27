@@ -125,4 +125,13 @@ double ves = Convert.ToDouble(Console.ReadLine(), CultureInfo.InvariantCulture);
 double bmi = ves / (rost * rost);      // Формула для расчета
 Console.WriteLine($"ИМТ: {bmi:F2}");   // Выводим результат
 
+//Задание 2. РазборФИО через char ★★
+Console.WriteLine();
+Console.WriteLine("Введите свою Фамилию:");
+string surname = Console.ReadLine();
+Console.WriteLine("Введите своё Имя:");
+string firstName = Console.ReadLine();
+
+char initial = firstName[0]; 
+Console.WriteLine($"{surname} {initial}.");
 
